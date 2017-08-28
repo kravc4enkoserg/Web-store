@@ -78,19 +78,25 @@ color: #ff5912;
     padding: 60px 0;
 }
 .item{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    color:#34404b;
     background-color: #fff;
     padding: 30px 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all .3s linear;
     text-align: center;
+}
+.item-img{
+    min-height: 215px; /* подумать, может убрать*/ 
 }
 .item .item-title{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 28px 0 30px;
 }
 .item:hover{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 header .top-header{
     border-bottom: 1px solid rgba(230, 232, 235, .5);
@@ -136,6 +142,15 @@ ul.user-controls li +li{
 ul.user-controls li {
     position: relative;
 }
+ul.user-controls li a span.icon-search-ic:hover{
+    background-position: -81px 0px;
+}
+ul.user-controls li a span.icon-user-ic:hover{
+    background-position: 0px -59px;
+}
+ul.user-controls li a span.icon-cart-ic:hover{
+    background-position: -20px -59px;
+}
 span.basket-up {
     position: absolute;
     font-size: 10px;
@@ -175,7 +190,22 @@ span.basket-up {
 }
 .price-wrapper a:hover{
     color: #ff5912;
-    background-position: -20px -59px; 
+    background-position: -20px -59px; /* убрать */
 }
-
+.load-more .circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ff5912;
+    border-radius: 50%;
+}
+.load-more .circle span + span {
+    padding-left: 5px;
+}
+.load-more {
+    background-color: #fff;
+    padding: 26px 0;
+    text-align: center;
+    margin-top: 80px;
+}
 /* ALL STYLE END */
