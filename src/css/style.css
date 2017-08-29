@@ -46,6 +46,9 @@ button{
 .justify-sp-between{
     justify-content: space-between;
 }
+.justify-sp-around{
+    justify-content: space-around;
+}
 .orange-text{
 color: #ff5912;
 }
@@ -112,6 +115,13 @@ header .bottom-header{
     border-bottom: 1px solid rgba(230, 232, 235, .5);
     padding: 42px 0;
 }
+footer {
+    margin-top: 60px;
+    padding: 84px 0;    
+    font-size: 14px;
+    color: #28313b;
+    background-color: #fff;
+}
 /*DEFAULT COMPONENT END*/
 
 /* ALL STYLE START */
@@ -119,7 +129,7 @@ nav.social-nav a + a{
     margin-left: 17px;
 }
 nav.social-nav a:hover{
-    color: #FF5710;
+    color: #FF5912;
 }
 .logo {
     margin-right: 85px;
@@ -166,7 +176,7 @@ span.basket-up {
     background: url(..//img/carousel-img-1.jpg) no-repeat center / cover;
     margin-bottom: 60px;
 }
-.items-carousel-description>span {
+.items-carousel-description > span {
     font-family: 'Harmonia_semibold';
     font-size: 18px;
     line-height: 1.67;
@@ -207,5 +217,32 @@ span.basket-up {
     padding: 26px 0;
     text-align: center;
     margin-top: 80px;
+}
+footer .copyright span{
+    display: block;
+    margin-top: 22px;
+}
+.payment h6{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+.payment ul li +li{
+    padding-left: 10px;
+}
+
+nav .footer-nav-col{
+    flex-direction:column;
+}
+nav.footer-nav{
+    flex-direction:row;
+    width: 40%;
+}
+.footer-nav-col a + a {
+    padding-top: 20px;
+}
+.footer-nav-col a:hover{
+    color: #ff5912;
 }
 /* ALL STYLE END */
