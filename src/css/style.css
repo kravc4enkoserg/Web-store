@@ -239,6 +239,9 @@ nav.footer-nav{
     flex-direction:row;
     width: 40%;
 }
+.footer-nav-col a{
+    display: list-item;
+}
 .footer-nav-col a + a {
     padding-top: 20px;
 }
