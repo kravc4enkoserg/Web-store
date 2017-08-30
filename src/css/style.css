@@ -119,6 +119,7 @@ footer {
     margin-top: 60px;
     padding: 84px 0;    
     font-size: 14px;
+    line-height: 2.14;
     color: #28313b;
     background-color: #fff;
 }
@@ -225,27 +226,42 @@ footer .copyright span{
 .payment h6{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
-    color: #ff5912;
+    line-height: 1.88;
+    color: #FF5911;
     margin-bottom: 20px;
 }
 .payment ul li +li{
     padding-left: 10px;
 }
-
-nav .footer-nav-col{
-    flex-direction:column;
+.footer-nav {
+    min-width: 50%;
+    margin-left: auto;
 }
-nav.footer-nav{
-    flex-direction:row;
-    width: 40%;
+.footer-nav-items {
+    display: flex;
+    height: 90px;
+    flex-flow:column wrap;
 }
-.footer-nav-col a{
-    display: list-item;
+.footer-nav-items li {
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
-.footer-nav-col a + a {
-    padding-top: 20px;
+.footer-nav-link {
+    display: inline-block;
 }
-.footer-nav-col a:hover{
-    color: #ff5912;
+span.point{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #28313b;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+.footer-nav-items li:hover .point{
+    background-color: #ff5912;;
+}
+.footer-nav-items li:hover{
+     color: #ff5912;
 }
 /* ALL STYLE END */
