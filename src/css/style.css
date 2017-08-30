@@ -50,6 +50,9 @@ button{
 .justify-sp-around{
     justify-content: space-around;
 }
+.justify-con-center{
+    justify-content: center;
+}
 .orange-text{
     color: #ff5912;
 }
@@ -64,6 +67,18 @@ button{
 }
 .green-bg{
     background-color: #2fd967;
+}
+.white-bg {
+    background-color: #fff;
+}
+.light-orange-bg{
+    background-color: #ff9060;
+}
+.orange-bg{
+    background-color: #ff5912;
+}
+.rating .empty{
+    color: #e9ecf3;
 }
 .description{
     font-size: 16px;
@@ -342,5 +357,93 @@ span.point{
 }
 .footer-nav-items li:hover{
      color: #ff5912;
+}
+.kit{
+    padding: 20px 60px;
+}
+.sales-block {
+    position: relative;
+}
+.sales-block > div {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+}
+.sales-block div:first-child {
+    transform: rotate(45deg);
+}
+.sales-block div:last-child {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top:0;
+    text-align: center;
+}
+.sales-block .text-sale {
+    display: inline-block;
+    font-family: 'Harmonia_italic';
+    color: #fff;
+    transform: rotate(45deg);
+    margin: 12px 22px 0;
+}
+.sales-block .percent {
+    display: inline-block;
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #fff;
+    transform: rotate(45deg);
+}
+.kit-description .kit-name{
+    display: block;
+    font-family: 'Harmonia_black';
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.kit-description .kit-text-content{
+    font-size: 12px;
+    color: #495662;
+}
+.kit-price a{
+    display: inline-block;
+    font-family: 'Harmonia_black';
+    font-size: 32px;
+    color: #ff5912;
+}
+.kit-price span + span{
+    margin-left: 18px;
+}
+.area-wrapper{
+    padding: 30px;
+    text-align: center;
+}
+.area-title {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.area-desciption{
+    letter-spacing: .6em;
+    color: rgba(52, 64, 75, .4);
+}
+.item-mini{
+    padding: 35px 28px;
+}
+.item-mini{
+    font-family: 'Harmonia_bold';
+}
+.item-mini-title{
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 30px;
+}
+.item-mini-price{
+    font-size: 16px;
+}
+.item-mini-description{
+    padding-left: 30px;
+    border-left: 1px solid #f5f5f6;  
 }
 /* ALL STYLE END */
