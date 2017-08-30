@@ -37,6 +37,7 @@ button{
 /* RESET END */
 
 /*DEFAULT CLASSES START*/
+
 .flex-container{
     display: flex;
 }
@@ -50,7 +51,19 @@ button{
     justify-content: space-around;
 }
 .orange-text{
-color: #ff5912;
+    color: #ff5912;
+}
+.red-bg{
+    background-color: #e12e3f;
+}
+.black-bg{
+    background-color: #34404b;
+}
+.blue-bg{
+    background-color: #3ab3ff;
+}
+.green-bg{
+    background-color: #2fd967;
 }
 .description{
     font-size: 16px;
@@ -62,6 +75,24 @@ color: #ff5912;
 .custom-icon{
     display: inline-block;
 }
+.icon-search-ic:hover{
+    background-position: -81px 0px;
+}
+.icon-user-ic:hover{
+    background-position: 0px -59px;
+}
+.icon-cart-ic:hover{
+    background-position: -20px -59px;
+}
+.icon-like-ic:hover {
+    background-position: -38px -80px;
+}
+.icon-add-to-cart-ic:hover {
+    background-position: 0px -38px;
+}
+.icon-share-ic:hover {
+    background-position: -44px -59px;
+  }
 .title{
     font-family: 'Harmonia_black';
     text-transform: uppercase;
@@ -81,6 +112,7 @@ color: #ff5912;
     padding: 60px 0;
 }
 .item{
+    position: relative;
     font-family: 'Harmonia_bold';
     font-size: 18px;
     color:#34404b;
@@ -88,19 +120,82 @@ color: #ff5912;
     padding: 30px 10px;
     transition: all .3s linear;
     text-align: center;
+    height: 372px;
 }
-.item-img{
-    min-height: 215px; /* подумать, может убрать*/ 
+.item:hover .item-title{
+    color: #ff5912;
+}
+.item:hover .item-price{
+    display: none;
 }
 .item .item-title{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 28px 0 30px;
+    padding-bottom: 30px;
+}
+.item .item-price{
+    color: #ff5912;
 }
 .item:hover{
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
+.item .item-img {
+    transition: all .3s linear;
+    margin-bottom: 30px;
+    height: 216px;
+}
+.item .item-img img{
+    max-height: 100%;
+}
+.item:hover .item-img{
+    height: 90px;
+}
+.item-description{
+    padding: 0 40px;
+}
+.more-info-on-hover{
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+    width: 100%;
+    padding: 0 50px;
+}
+.more-info-on-hover .size{
+    font-size: 14px;
+    color: #34404b;
+    margin-bottom: 29px;
+}
+.more-info-on-hover .colors{
+    text-align: center;
+    border-bottom: 1px solid #f2f4f7;
+    padding-bottom:30px; 
+}
+.more-info-on-hover .colors li{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.more-info-on-hover .item-controls{
+    padding-top: 30px;
+    text-align: center;
+}
+.more-info-on-hover .item-controls li{
+    display: inline-block;
+}
+.more-info-on-hover .item-controls li + li{
+    margin-left: 30px;
+}
+.item:hover .more-info-on-hover {
+    opacity: 1;
+}
+
+
+
 header .top-header{
     border-bottom: 1px solid rgba(230, 232, 235, .5);
     padding: 20px 0;
@@ -153,15 +248,7 @@ ul.user-controls li +li{
 ul.user-controls li {
     position: relative;
 }
-ul.user-controls li a span.icon-search-ic:hover{
-    background-position: -81px 0px;
-}
-ul.user-controls li a span.icon-user-ic:hover{
-    background-position: 0px -59px;
-}
-ul.user-controls li a span.icon-cart-ic:hover{
-    background-position: -20px -59px;
-}
+
 span.basket-up {
     position: absolute;
     font-size: 10px;
@@ -199,10 +286,6 @@ span.basket-up {
 .price-wrapper a {
     display: inline-block;
 }
-.price-wrapper a:hover{
-    color: #ff5912;
-    background-position: -20px -59px; /* убрать */
-}
 .load-more .circle{
     display: inline-block;
     width: 8px;
@@ -227,7 +310,7 @@ footer .copyright span{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
     line-height: 1.88;
-    color: #FF5911;
+    color: #ff5912;
     margin-bottom: 20px;
 }
 .payment ul li +li{
@@ -242,10 +325,6 @@ footer .copyright span{
     height: 90px;
     flex-flow:column wrap;
 }
-.footer-nav-items li {
-    page-break-inside: avoid;
-    break-inside: avoid;
-}
 .footer-nav-link {
     display: inline-block;
 }
@@ -259,7 +338,7 @@ span.point{
     margin-bottom: 2px;
 }
 .footer-nav-items li:hover .point{
-    background-color: #ff5912;;
+    background-color: #ff5912;
 }
 .footer-nav-items li:hover{
      color: #ff5912;
