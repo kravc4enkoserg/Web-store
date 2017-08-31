@@ -574,4 +574,19 @@ span.point{
 .add-to-cart-hover a:hover .icon-add-to-cart-ic{
     background-position: 0px -38px;
 }
+.category-wrap{
+    padding-top:120px;
+}
+.aside-section{
+padding: 40px;
+}
+.aside-section + .aside-section{
+    margin-top: 30px;
+}
+.aside-section-title{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 35px;
+}
 /* ALL STYLE END */
