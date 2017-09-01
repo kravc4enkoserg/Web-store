@@ -159,6 +159,7 @@ label{
     display: none;
 }
 .checkbox-group label{
+    font-family: 'Harmonia_semibold';
     font-size: 16px;
     cursor: pointer;
 }
@@ -325,6 +326,25 @@ footer {
     color: #28313b;
     background-color: #fff;
 }
+.footer-nav a{
+    display: inline-block;
+}
+span.point{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #28313b;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+.footer-nav li:hover .point{
+    background-color: #FF5810;
+}
+.footer-nav li:hover{
+     color: #ff5912;
+}
 /*DEFAULT COMPONENT END*/
 
 /* ALL STYLE START */
@@ -412,6 +432,7 @@ span.basket-up {
     background-color: #fff;
     padding: 26px 0;
     text-align: center;
+    line-height: 8px;
     margin-top: 80px;
 }
 footer .copyright span{
@@ -428,41 +449,10 @@ footer .copyright span{
 .payment ul li +li{
     padding-left: 10px;
 }
-.footer-nav {
-    min-width: 50%;
-    margin-left: auto;
-}
-.footer-nav-items {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 90px;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-    -webkit-flex-flow:column wrap;
-        -ms-flex-flow:column wrap;
-            flex-flow:column wrap;
-}
-.footer-nav-link {
-    display: inline-block;
-}
-span.point{
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background-color: #28313b;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 2px;
-}
-.footer-nav-items li:hover .point{
-    background-color: #ff5912;
-}
-.footer-nav-items li:hover{
-     color: #ff5912;
-}
+
+
+
+
 .kit{
     padding: 20px 60px;
     border: 1px solid rgba(52, 64, 75, .1);
@@ -518,10 +508,15 @@ span.point{
     font-size: 12px;
     color: #495662;
 }
+.kit-price {
+    padding-left: 36px;
+    border-left: 1px solid #f5f5f6;
+}
 .kit-price a{
     display: inline-block;
     font-family: 'Harmonia_black';
     font-size: 32px;
+    line-height: 46px;
     color: #ff5912;
 }
 .kit-price span + span{
@@ -604,9 +599,10 @@ span.point{
 }
 .category-wrap{
     padding-top:120px;
+    margin-bottom: 60px;
 }
 .aside-section{
-padding: 40px;
+    padding: 40px;
 }
 .aside-section + .aside-section{
     margin-top: 30px;
@@ -619,5 +615,22 @@ padding: 40px;
 }
 .category-wrap .item{
     margin-bottom: 30px;
+}
+.categories li + li{
+    padding-top: 35px;
+}
+
+.aside-section .checkbox-group + .checkbox-group{
+    padding-top: 35px;
+}
+.categories ul li {
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+.categories ul li:hover{
+    color:#ff5912;
+}
+.category-wrap .load-more{
+    margin-top: 0;
 }
 /* ALL STYLE END */

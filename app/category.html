@@ -77,6 +77,14 @@
                             <div class="aside-section-title">
                                 <span>Categories</span>
                             </div>
+                            <nav class="categories">
+                                <ul>
+                                    <li><a href="">Man</a></li>
+                                    <li><a href="">Women</a></li>
+                                    <li><a href="">Childrens</a></li>
+                                    <li><a href="">Hot Deals</a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="aside-section white-bg">
                             <div class="aside-section-title">
@@ -84,9 +92,15 @@
                             </div>
                             <div class="range">
                                 <div id="slider-range"></div>
-                                <div class="range-info">
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                <div class="add-range-value flex-container" >
+                                    <div class="range-input-reoup">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-reoup">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -117,6 +131,24 @@
                             <div class="aside-section-title">
                                 <span>Brands</span>
                             </div>
+                            <form>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandsReebok" id="brandsReebok" checked>
+                                    <label for="brandsReebok">Reebok</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandsAddidas" id="brandsAddidas">
+                                    <label for="brandsAddidas">Addidas</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandsNike" id="brandsNike">
+                                    <label for="brandsNike">Nike</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandsActive" id="brandsActive">
+                                    <label for="brandsActive">Active</label>
+                                </div>
+                            </form>
                         </div>
                     </aside>
                 </div>
@@ -216,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                                                <div class="row">
+                        <div class="row">
                             <div class="col-md-4">
                                 <div class="item">
                                     <div class="item-img">
@@ -311,7 +343,7 @@
                                 </div>
                             </div>
                         </div>
-                                                <div class="row">
+                        <div class="row">
                             <div class="col-md-4">
                                 <div class="item">
                                     <div class="item-img">
@@ -405,12 +437,38 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="load-more">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <section class="default-section subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="subscribe-form white-bg flex-container justify-sp-between aligh-center">
+                        <div class="subscribe-description">
+                            <span class="subscribe-title">NEWS LETTER</span>
+                            <span class="subscribe-text">join us now to get all news and special offers</span>
+                        </div>
+                        <form class="flex-container aligh-center">
+                            <div class="subscribe-input-group">
+                                <label for="subscribeEmail" class="custom-icon icon-mail-ic"></label>
+                                <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="type your email here">
+                            </div>
+                            <button class="btn btn-default">join us </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </section>
 <!-- MAIN END -->
 <!-- FOOTER START -->
 <footer>
@@ -421,18 +479,20 @@
                     <a href=""><img src="img/logo.png" alt=""></a>
                     <span>shopy c 2015 . your copy right here</span>
                 </div>
-                <nav class="footer-nav">
-                    <ul class="footer-nav-items">
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>about us</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>contact us</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>support</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>our feed</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>terms and conditions</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>our privacy</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>join us</a></li>
-                        <li><a class="footer-nav-link" href=""><span class="point"></span>live support</a></li>
-                    </ul>          
-                </nav> 
+                    <ul class="footer-nav">
+                        <li><a href=""><span class="point"></span>about us</a></li>
+                        <li><a href=""><span class="point"></span>contact us</a></li>
+                        <li><a href=""><span class="point"></span>support</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li><a href=""><span class="point"></span>our feed</a></li>
+                        <li><a href=""><span class="point"></span>terms and conditions</a></li>
+                        <li><a href=""><span class="point"></span>our privacy</a></li>
+                    </ul>
+                    <ul class="footer-nav">
+                        <li><a href=""><span class="point"></span>join us</a></li>
+                        <li><a href=""><span class="point"></span>live support</a></li>                       
+                    </ul>                            
                 <div class="payment">
                     <h6>Payment Methods</h6>
                     <ul class="flex-container aligh-center">
