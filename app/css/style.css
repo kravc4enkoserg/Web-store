@@ -634,3 +634,61 @@ footer .copyright span{
     margin-top: 0;
 }
 /* ALL STYLE END */
+
+
+
+
+
+
+/* range-slider */
+.ui-slider .ui-slider-handle {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.ui-widget {
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #34404b;
+    margin-bottom: 38px;
+    margin-top: 70px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+     border: none; 
+}
+.ui-slider-horizontal {
+        height: 0;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: #34404b;
+    color: #34404b;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;}
+.min-value, .max-value{
+    top: -27px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+ }
+ .range-input-reoup input{
+    height: 25px;
+    width: 45px;
+    background-color: #edf0f2;
+ }
+ .range-input-reoup label {
+     padding-right: 14px;
+ }
+ .add-range-value .range-input-reoup + .range-input-reoup {
+    padding-left: 20px;
+ }
