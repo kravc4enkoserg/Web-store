@@ -38,14 +38,22 @@ label{
     margin-bottom: 0;
 }
 .btn {
-    padding: 18px 28px;
+    padding: 18px 30px;
     font-size: 14px;
+    line-height: 1;
     border: none;
     border-radius: 0;
 }
 .btn.btn-default{
     color: #fff;
     background-color: #ff5912;
+}
+.btn.btn-radius {
+    border-radius: 30px;
+}
+.btn.btn-big {
+    font-size:18px;
+    padding: 17px 24px;
 }
 /* RESET END */
 
@@ -125,7 +133,7 @@ label{
     font-family: 'Harmonia_black';
     text-transform: uppercase;
     font-size: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 .title.big{
     font-size: 52px;
@@ -581,6 +589,73 @@ footer .copyright span{
 .category-wrap .load-more{
     margin-top: 0;
 }
+.product-wrap{
+    padding: 100px 0 125px;
+    background-color: #fff;   
+   }
+.product-carousel{
+    width: 330px;
+}
+.choce-size {
+    padding-right: 85px;
+    border-right: 1px solid #edeff1;
+}
+.choce-size span,
+.quantity span{
+    margin-right: 40px;
+    font-size: 18px;
+    font-family: 'Harmonia_semibold';
+}
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio label{
+    font-size: 14px;
+    font-family: 'Harmonia_semibold';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio + .size-radio {
+    margin-left: 20px;
+}
+.order-form {
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+.order-now{
+    padding-top: 37px;
+}
+.product-price {
+    font-family: 'Harmonia_black';
+    font-size: 20px;
+    margin-right: auto;
+}
+
+.product-share{
+    padding-right: 25px;
+    text-align: center;
+}
+.product-share li{
+    display: inline-block;
+}
+.product-share li + li{
+    margin-left: 30px;
+}
+.product-info{
+    padding-bottom: 22px;
+}
+.product-kit-text{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    line-height: 1.67;
+    color: #3c4751;
+    margin-bottom: 28px;
+ }
 /* ALL STYLE END */
 
 
@@ -604,10 +679,10 @@ footer .copyright span{
     margin-top: 70px;
 }
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-     border: none; 
+    border: none; 
 }
 .ui-slider-horizontal {
-        height: 0;
+    height: 0;
 }
 .ui-state-default, 
 .ui-widget-content .ui-state-default, 
@@ -621,10 +696,12 @@ html .ui-button.ui-state-disabled:active {
 .ui-slider-horizontal .ui-slider-handle {
     top: -5px;}
 .min-value, .max-value{
-    top: -27px;
     position: absolute;
+    top: -27px;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
  }
  .range-input-reoup input{
     height: 25px;
@@ -632,8 +709,17 @@ html .ui-button.ui-state-disabled:active {
     background-color: #edf0f2;
  }
  .range-input-reoup label {
-     padding-right: 14px;
+     padding-right: 10px;
+     font-family: 'Harmonia_semibold';
+     font-size: 14px;
  }
  .add-range-value .range-input-reoup + .range-input-reoup {
-    padding-left: 20px;
+    padding-left: 15px;
  }
+ .add-range-value input {
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+ } 
+
+
+

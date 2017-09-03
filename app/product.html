@@ -9,6 +9,12 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- JQuery UI style -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -65,7 +71,87 @@
 <!-- HEADER END -->
 <!-- MAIN START -->
 <main>
-    
+    <div class="product-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="product-carousel center-block">
+                        <div class="flexslider">
+                            <ul class="slides">
+                              <li data-thumb="img/product-slide-1.png">
+                                <img src="img/product-slide-1.jpg" />
+                              </li>
+                              <li data-thumb="img/product-slide-1.png">
+                                <img src="img/product-slide-1.jpg" />
+                              </li>
+                              <li data-thumb="img/product-slide-1.png">
+                                <img src="img/product-slide-1.jpg" />
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="product-description">
+                        <div class="product-info">
+                            <div class="title big orange-text">
+                                <span>FULL WINTER KIT</span>
+                            </div>
+                            <div class="product-kit-text">
+                                <span class="">Half Jacket + Skiny Trousers + Boot leather</span>
+                            </div>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing</p>
+                            <p class="description">and typesetting industry</p>
+                        </div>
+                        <div class="order-info">
+                            
+                            <div class="order-form">
+                                <form id="product-option" class="flex-container justify-sp-between">
+                                    <div class="choce-size flex-container aligh-center">
+                                        <span>Choos Size</span>
+                                        <div class="size-radio-btn-group flex-container aligh-center">
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="sSize">
+                                                <label for="sSize">s</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="mSize">
+                                                <label for="mSize">m</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="lSize" checked>
+                                                <label for="lSize">l</label>
+                                            </div>
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="xlSize">
+                                                <label for="xlSize">xl</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quantity flex-container aligh-center">
+                                        <span>Choos Quantity</span>
+                                        <input type="number" name="quantity" form = "product-option" class="custom-number" value="3">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="order-now flex-container aligh-center justify-sp-between">
+                                <div class="product-price">
+                                    <span>Price : $120 </span>
+                                </div>
+                                <ul class="product-share">
+                                    <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
+                                    <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></a></li>
+                                    <li><a href=""><span class="custom-icon icon-like-ic"></span></a></a></li>
+                                </ul>
+                                <input type="submit" value="Order Now" class="btn btn-default btn-radius btn-big">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <section class="default-section">
@@ -270,6 +356,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
 <script src="js/plugins.min.js"></script>
+<script src=js/jquery.formstyler.min.js></script>
 </body>
 </html>
