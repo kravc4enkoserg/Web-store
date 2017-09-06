@@ -109,6 +109,9 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav {
   *height: 0;
 }
+.items-flexslider .flex-direction-nav {
+  display: none;
+}
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
@@ -228,6 +231,38 @@ html[xmlns] .flexslider .slides {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
+}
+
+.items-flexslider .flex-control-nav {
+  bottom: auto;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.items-flexslider .flex-control-paging li{
+  margin: 0;
+  display: block;
+}
+.items-flexslider .flex-control-paging li + li{
+  margin-top: 10px;
+}
+.items-flexslider .flex-control-paging li a {
+  width: 10px;
+  height: 16px;
+  display: block;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 0;
+  transition: all .3s linear;
+}
+.items-flexslider .flex-control-paging li a:hover{
+  background: #ff5912;
+}
+.items-flexslider .flex-control-paging li a.flex-active {
+  background: #ff5912;
+  height: 36px;
 }
 .flex-control-thumbs {
   margin: 70px 0 0;

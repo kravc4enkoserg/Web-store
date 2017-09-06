@@ -64,13 +64,24 @@ $( function() {
         $(this).attr('min', values[0]);
         range.slider( "option", "values", [ values[0] , this.value ] );
 
-    })
+    });
     // flexs slide init
     $(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: "thumbnails"
          });
+    });
+    // flexs slide home init
+    $(window).load(function() {
+  $('.items-flexslider').flexslider({
+    animation: "slide"
+  });
+});
+    // slicknav init
+    $('.main-nav').slicknav({
+        appendTo: "header .bottom-header .flex-container.justify-sp-between",
+        label: ""
     });
     // form styler init
     $('.custom-number').styler();

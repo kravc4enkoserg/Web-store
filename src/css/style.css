@@ -101,11 +101,6 @@ label{
 .rating .empty{
     color: #e9ecf3;
 }
-.description{
-    font-size: 16px;
-    line-height: 1.88;
-    color: #495662;
-}
 /*DEFAULT CLASSES END*/
 /*DEFAULT COMPONENT START*/
 .custom-icon{
@@ -144,6 +139,11 @@ label{
     color: #495662;
     margin-bottom: 70px;
 }
+.description{
+    font-size: 16px;
+    line-height: 1.88;
+    color: #495662;
+}
 .default-section{
     padding: 60px 0;
 }
@@ -170,6 +170,62 @@ label{
 .checkbox-group input[type="checkbox"]:checked + label::before{
     border-color: #ff5912;
 }
+/* HEADER STYLE START */
+header .top-header{
+    border-bottom: 1px solid rgba(230, 232, 235, .5);
+    padding: 20px 0;
+}
+header .top-header .phones-list li + li{
+    margin-left: 20px;
+}
+header .top-header .phones-list li span.custom-icon{
+    margin-right: 10px;
+}
+nav.social-nav a + a{
+    margin-left: 17px;
+}
+nav.social-nav a:hover{
+    color: #FF5912;
+}
+.logo {
+    margin-right: 85px;
+}
+header .bottom-header nav.main-nav a + a{
+    margin-left: 42px;
+}
+nav.main-nav{
+    font-size: 16px;
+}
+nav.main-nav a:hover{
+    color: #ff5912;
+}
+header .bottom-header{
+    border-bottom: 1px solid rgba(230, 232, 235, .5);
+    padding: 42px 0;
+}
+ul.user-controls{
+    margin-left: auto;
+}
+ul.user-controls li +li{
+    margin-left: 30px;
+}
+ul.user-controls li {
+    position: relative;
+}
+span.basket-up {
+    position: absolute;
+    font-size: 10px;
+    line-height: 12px;
+    width: 18px;
+    height: 18px;
+    background-color: #34404b;
+    border-radius: 50%;
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+/* HEADER STYLE END */
+/* ITEM STYLE START */
 .item{
     position: relative;
     font-family: 'Harmonia_bold';
@@ -255,6 +311,8 @@ label{
 .item:hover .more-info-on-hover {
     opacity: 1;
 }
+/* ITEM STYLE END */
+/* SUBSCRIBE-FORM STYLE START */
 .subscribe-form{
     padding: 37px 42px;
 }
@@ -285,20 +343,8 @@ label{
 .subscribe-form button:hover{
     background-color: #D9470A;
 }
-header .top-header{
-    border-bottom: 1px solid rgba(230, 232, 235, .5);
-    padding: 20px 0;
-}
-header .top-header .phones-list li + li{
-    margin-left: 20px;
-}
-header .top-header .phones-list li span.custom-icon{
-    margin-right: 10px;
-}
-header .bottom-header{
-    border-bottom: 1px solid rgba(230, 232, 235, .5);
-    padding: 42px 0;
-}
+/* SUBSCRIBE-FORM STYLE END */
+/* FOOTER STYLE START */
 footer {
     margin-top: 60px;
     padding: 84px 0;    
@@ -325,47 +371,28 @@ span.point{
 .footer-nav li:hover{
      color: #ff5912;
 }
+footer .copyright span{
+    display: block;
+    margin-top: 22px;
+}
+.payment h6{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+    line-height: 1.88;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+.payment ul li +li{
+    padding-left: 10px;
+}
+/* FOOTER STYLE END */
 /*DEFAULT COMPONENT END*/
 
 /* ALL STYLE START */
-nav.social-nav a + a{
-    margin-left: 17px;
-}
-nav.social-nav a:hover{
-    color: #FF5912;
-}
-.logo {
-    margin-right: 85px;
-}
-header .bottom-header nav.main-nav a + a{
-    margin-left: 42px;
-}
-nav.main-nav{
-    font-size: 16px;
-}
-nav.main-nav a:hover{
-    color: #ff5912;
-}
-ul.user-controls{
-    margin-left: auto;
-}
-ul.user-controls li +li{
-    margin-left: 30px;
-}
-ul.user-controls li {
+/* ITEMS-CAROUSEL START */
+.items-flexslider{
     position: relative;
-}
-span.basket-up {
-    position: absolute;
-    font-size: 10px;
-    line-height: 12px;
-    width: 18px;
-    height: 18px;
-    background-color: #34404b;
-    border-radius: 50%;
-    top:-20px;
-    left: 50%;
-    transform: translateX(-50%)
+    padding-left: calc(8.3333% + 30px);
 }
 .items-carousel{
     min-height: 650px;
@@ -394,6 +421,8 @@ span.basket-up {
 .price-wrapper a {
     display: inline-block;
 }
+/* ITEMS-CAROUSEL END */
+/* LOAD MORE STYLE START */
 .load-more .circle{
     display: inline-block;
     width: 8px;
@@ -410,21 +439,9 @@ span.basket-up {
     text-align: center;
     line-height: 8px;
     margin-top: 80px;
+    cursor: pointer;
 }
-footer .copyright span{
-    display: block;
-    margin-top: 22px;
-}
-.payment h6{
-    font-family: 'Harmonia_semibold';
-    font-size: 16px;
-    line-height: 1.88;
-    color: #ff5912;
-    margin-bottom: 20px;
-}
-.payment ul li +li{
-    padding-left: 10px;
-}
+/* LOAD MORE STYLE END*/
 
 
 
@@ -494,7 +511,7 @@ footer .copyright span{
     border: 1px solid rgba(52, 64, 75, .1);
 }
 .area-wrapper{
-    padding: 30px;
+    padding: 29px;
     text-align: center;
     
 }

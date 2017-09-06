@@ -33,8 +33,8 @@
 }
 
 .jq-number__spin.minus {
-	top: auto;
-	bottom: 0;
+	right: 0;
+	left: auto;
 }
 .jq-number__spin:after {
 	content: '';
@@ -51,8 +51,8 @@
 	display: none;
 }
 .jq-number__spin.plus {
-	right: 0;
-	left: auto;
+	top: auto;
+	bottom: 0;
 }
 .jq-number__spin:before {
 	content: '';

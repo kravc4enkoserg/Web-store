@@ -11,12 +11,13 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- JQuery UI style -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -72,17 +73,50 @@
 <main>
     <section class="items-carousel flex-container aligh-center">
         <div class="container">
-            <div class="items-carousel-description">
-                <div class="title big orange-text">
-                     <span>FULL WINTER KIT</span>
-                </div>
-                <span>Half Jacket + Skiny Trousers + Boot leather</span>
-                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
-                <div class="price-wrapper">
-                     <span>Price: 120$</span>
-                     <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
-                </div>
-            </div>  
+            <div class="items-flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                            <span>FULL WINTER KIT</span>
+                            </div>
+                            <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            <div class="price-wrapper">
+                                <span>Price: 120$</span>
+                                <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>FULL WINTER KIT</span>
+                            </div>
+                            <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            <div class="price-wrapper">
+                                <span>Price: 120$</span>
+                                <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                        <div class="items-carousel-description">
+                            <div class="title big orange-text">
+                                <span>FULL WINTER KIT</span>
+                            </div>
+                            <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                            <div class="price-wrapper">
+                                <span>Price: 120$</span>
+                                <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
+                            </div>
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
     <section class="default-section">
@@ -349,47 +383,50 @@
 <!-- MAIN END -->
 <!-- FOOTER START -->
 <footer>
-    <div class="footer-content">
-        <div class="container">
-            <div class="flex-container justify-sp-between">
-                <div class="copyright">
-                    <a href=""><img src="img/logo.png" alt=""></a>
-                    <span>shopy c 2015 . your copy right here</span>
-                </div>
-                    <ul class="footer-nav">
-                        <li><a href=""><span class="point"></span>about us</a></li>
-                        <li><a href=""><span class="point"></span>contact us</a></li>
-                        <li><a href=""><span class="point"></span>support</a></li>
-                    </ul>
-                    <ul class="footer-nav">
-                        <li><a href=""><span class="point"></span>our feed</a></li>
-                        <li><a href=""><span class="point"></span>terms and conditions</a></li>
-                        <li><a href=""><span class="point"></span>our privacy</a></li>
-                    </ul>
-                    <ul class="footer-nav">
-                        <li><a href=""><span class="point"></span>join us</a></li>
-                        <li><a href=""><span class="point"></span>live support</a></li>                       
-                    </ul>                            
-                <div class="payment">
-                    <h6>Payment Methods</h6>
-                    <ul class="flex-container aligh-center">
-                        <li><a href=""><span class="custom-icon icon-amex-ic"></span></a></li>
-                        <li><a href=""><span class="custom-icon icon-no-name-cart-1-ic"></span></a></li>
-                        <li><a href=""><span class="custom-icon icon-visa-ic"></span></a></li>
-                        <li><a href=""><span class="custom-icon icon-master-cart-ic"></span></a></li>
-                        <li><a href=""><span class="custom-icon icon-no-name-cart-2-ic"></span></a></li>
-                    </ul>
+        <div class="footer-content">
+            <div class="container">
+                <div class="flex-container justify-sp-between">
+                    <div class="copyright">
+                        <a href=""><img src="img/logo.png" alt=""></a>
+                        <span>shopy c 2015 . your copy right here</span>
+                    </div>
+                        <ul class="footer-nav">
+                            <li><a href=""><span class="point"></span>about us</a></li>
+                            <li><a href=""><span class="point"></span>contact us</a></li>
+                            <li><a href=""><span class="point"></span>support</a></li>
+                        </ul>
+                        <ul class="footer-nav">
+                            <li><a href=""><span class="point"></span>our feed</a></li>
+                            <li><a href=""><span class="point"></span>terms and conditions</a></li>
+                            <li><a href=""><span class="point"></span>our privacy</a></li>
+                        </ul>
+                        <ul class="footer-nav">
+                            <li><a href=""><span class="point"></span>join us</a></li>
+                            <li><a href=""><span class="point"></span>live support</a></li>                       
+                        </ul>                            
+                    <div class="payment">
+                        <h6>Payment Methods</h6>
+                        <ul class="flex-container aligh-center">
+                            <li><a href=""><span class="custom-icon icon-amex-ic"></span></a></li>
+                            <li><a href=""><span class="custom-icon icon-no-name-cart-1-ic"></span></a></li>
+                            <li><a href=""><span class="custom-icon icon-visa-ic"></span></a></li>
+                            <li><a href=""><span class="custom-icon icon-master-cart-ic"></span></a></li>
+                            <li><a href=""><span class="custom-icon icon-no-name-cart-2-ic"></span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- FOOTER END -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins.min.js"></script>
-</body>
-</html>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src=js/jquery.formstyler.min.js></script>
+    <script src=js/jquery.slicknav.min.js></script>
+    </body>
+    </html>
