@@ -4,8 +4,8 @@
 	padding: 0 10px;
 }
 .jq-number__field {
-	width: 40px;
-	margin-left: 13px;
+	width: 30px;
+	margin: 0 10px;
 }
 .jq-number__field input {
 	-webkit-box-sizing: border-box;
@@ -75,4 +75,11 @@
 .jq-number__spin:hover:before,
 .jq-number__spin.plus:hover:after {
 	background: #ff5912;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
 }

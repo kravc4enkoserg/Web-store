@@ -789,12 +789,16 @@ html .ui-button.ui-state-disabled:active {
      font-family: 'Harmonia_semibold';
      font-size: 14px;
  }
+ input[type='number'] {
+     -moz-appearance: textfield;
+ }
  .add-range-value .range-input-reoup + .range-input-reoup {
     padding-left: 15px;
  }
  .add-range-value input {
     font-family: 'Harmonia_semibold';
     font-size: 14px;
+    text-align: center;
  } 
 /* RANGE-SLIDER STYLE END */
 /*---------------------------------------------------- CATEGORY PAGE STYLE END-------------------------------------------------------  */
