@@ -806,16 +806,20 @@ html .ui-button.ui-state-disabled:active {
 .product-carousel{
     width: 330px;
 }
-.choce-size {
-    padding-right: 85px;
-    border-right: 1px solid #edeff1;
-}
 .choce-size span,
 .quantity span{
     margin-right: 40px;
     font-size: 18px;
     font-family: 'Harmonia_semibold';
 }
+.quantity{
+    padding-left: 95px;
+    border-left: 1px solid #edeff1; 
+}
+.size-radio{
+    position: relative;
+}
+
 .size-radio input[type="radio"]{
     display: none;
 }
@@ -825,12 +829,26 @@ html .ui-button.ui-state-disabled:active {
 }
 .size-radio label{
     font-size: 14px;
+    line-height: 18px;
     font-family: 'Harmonia_semibold';
     text-transform: uppercase;
     cursor: pointer;
 }
+.size-radio::after {
+    content: "-";
+    position: absolute;
+    font-size: 18px;
+    color: #34404b;
+    line-height: 18px;
+    bottom: 0px;
+    left: 100%;
+    margin-left: 6px;
+}
+.size-radio:last-child::after{
+    display: none;
+}
 .size-radio + .size-radio {
-    margin-left: 20px;
+    margin-left: 22px;
 }
 .order-form {
     padding: 40px 0;
