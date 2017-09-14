@@ -61,7 +61,7 @@
 	width: 10px;
 	height: 2px;
 	border: none;
-	background: #34404b;
+	background: rgba(52, 64, 75, .8);
 }
 .jq-number__spin.plus:after {
 	top:8px;
@@ -69,7 +69,7 @@
 	width: 2px;
 	height: 10px;
 	border: none;
-	background: #34404b;
+	background: rgba(52, 64, 75, .8);;
 }
 .jq-number__spin:hover:before,
 .jq-number__spin.plus:hover:after {

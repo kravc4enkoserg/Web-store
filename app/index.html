@@ -31,11 +31,11 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header class="white-bg">
+<header class="white-bg header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
-                <ul class="phones-list flex-container aligh-center">
+                <ul class="phones-list flex-container aligh-center flex-wrap">
                     <li class="aligh-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com</li>
                     <li class="aligh-center"><span class="custom-icon icon-phone-book-ic"></span>996 - 5553 - 453</li>
                 </ul>
@@ -50,13 +50,13 @@
     </div>
     <div class="bottom-header">
         <div class="container">
-            <div class="flex-container justify-sp-between aligh-center">
+            <div class="flex-container justify-sp-between aligh-center flex-wrap">
                 <div class="logo">
                     <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
                 <nav class="main-nav">
                     <a href="">Home</a>
-                    <a href="product.html">Products</a>
+                    <a href="">Products</a>
                     <a href="">Products</a>
                     <a href="">About</a>
                     <a href="">Contact</a>
@@ -76,8 +76,17 @@
     <section class="items-carousel flex-container aligh-center">
         <div class="container">
             <div class="items-flexslider">
-                <ul class="slides">
-                    <li>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
                         <div class="items-carousel-description">
                             <div class="title big orange-text">
                             <span>FULL WINTER KIT</span>
@@ -89,11 +98,11 @@
                                 <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
                             </div>
                         </div>  
-                    </li>
-                    <li>
+                      </div>
+                      <div class="item">
                         <div class="items-carousel-description">
                             <div class="title big orange-text">
-                                <span>FULL WINTER KIT</span>
+                            <span>FULL WINTER KIT</span>
                             </div>
                             <span>Half Jacket + Skiny Trousers + Boot leather</span>
                             <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
@@ -102,11 +111,11 @@
                                 <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
                             </div>
                         </div>  
-                    </li>
-                    <li>
+                      </div>
+                      <div class="item">
                         <div class="items-carousel-description">
                             <div class="title big orange-text">
-                                <span>FULL WINTER KIT</span>
+                            <span>FULL WINTER KIT</span>
                             </div>
                             <span>Half Jacket + Skiny Trousers + Boot leather</span>
                             <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
@@ -115,10 +124,10 @@
                                 <a href=""><span class="custom-icon icon-cart-hover-ic"></span><span class="orange-text">Order Now</span></a>
                             </div>
                         </div>  
-                    </li>
-                </ul>
+                      </div>
+                    </div>
+                  </div> 
             </div>
-
         </div>
     </section>
     <section class="default-section">
@@ -130,7 +139,7 @@
             <div class="new-items">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item">
+                        <div class="items">
                             <div class="item-img">
                                 <a href="category.html"><img src="img/item-img-1.png" alt=""></a>
                             </div>
@@ -161,7 +170,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item">
+                        <div class="items">
                             <div class="item-img">
                                 <a href="category.html"><img src="img/item-img-2.png" alt=""></a>
                             </div>
@@ -192,7 +201,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item">
+                        <div class="items">
                             <div class="item-img">
                                 <a href=""><img src="img/item-img-3.png" alt=""></a>
                             </div>
@@ -223,7 +232,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="item">
+                        <div class="items">
                             <div class="item-img">
                                 <a href=""><img src="img/item-img-3.png" alt=""></a>
                             </div>
@@ -299,7 +308,7 @@
                 <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry </span>
             <div class="best-sales-items">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="item-mini white-bg flex-container justify-sp-between aligh-center">
                             <div class="item-mini-img">
                                 <a href=""><img src="img/item-img-1-min.png" alt=""></a>
@@ -318,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="item-mini white-bg flex-container justify-sp-between aligh-center">
                             <div class="item-mini-img">
                                 <a href=""><img src="img/item-img-1-min.png" alt=""></a>
@@ -337,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 hidden-xs hidden-sm">
+                    <div class="col-md-4 col-xs-12 hidden-sm hidden-xs">
                         <div class="item-mini white-bg flex-container justify-sp-between aligh-center">
                             <div class="item-mini-img">
                                 <a href=""><img src="img/item-img-1-min.png" alt=""></a>
@@ -369,7 +378,7 @@
                             <span class="subscribe-title">NEWS LETTER</span>
                             <span class="subscribe-text">join us now to get all news and special offers</span>
                         </div>
-                        <form class="flex-container aligh-center">
+                        <form class="flex-container aligh-center flex-wrap">
                             <div class="subscribe-input-group">
                                 <label for="subscribeEmail" class="custom-icon icon-mail-ic"></label>
                                 <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="type your email here">
@@ -385,13 +394,14 @@
 <!-- MAIN END -->
 <!-- FOOTER START -->
 <footer>
-        <div class="footer-content">
+        <div class="footer-wrap">
             <div class="container">
-                <div class="flex-container justify-sp-between">
+                <div class="footer-content flex-container justify-sp-between">
                     <div class="copyright">
                         <a href=""><img src="img/logo.png" alt=""></a>
                         <span>shopy c 2015 . your copy right here</span>
                     </div>
+                    <nav class="footer-nav-wrap flex-container justify-sp-between">
                         <ul class="footer-nav">
                             <li><a href=""><span class="point"></span>about us</a></li>
                             <li><a href=""><span class="point"></span>contact us</a></li>
@@ -405,7 +415,8 @@
                         <ul class="footer-nav">
                             <li><a href=""><span class="point"></span>join us</a></li>
                             <li><a href=""><span class="point"></span>live support</a></li>                       
-                        </ul>                            
+                        </ul>     
+                    </nav>                   
                     <div class="payment">
                         <h6>Payment Methods</h6>
                         <ul>

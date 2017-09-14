@@ -31,11 +31,11 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header class="white-bg">
+<header class="white-bg header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
-                <ul class="phones-list flex-container aligh-center">
+                <ul class="phones-list flex-container aligh-center flex-wrap">
                     <li class="aligh-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com</li>
                     <li class="aligh-center"><span class="custom-icon icon-phone-book-ic"></span>996 - 5553 - 453</li>
                 </ul>
@@ -50,7 +50,7 @@
     </div>
     <div class="bottom-header">
         <div class="container">
-            <div class="flex-container justify-sp-between aligh-center">
+            <div class="flex-container justify-sp-between aligh-center flex-wrap">
                 <div class="logo">
                     <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
@@ -76,7 +76,12 @@
     <div class="product-wrap">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
+                    <div class="product-info">
+                        <div class="title big orange-text text-center hidden-lg hidden-md">
+                            <span>FULL WINTER KIT</span>
+                        </div>
+                    </div>
                     <div class="product-carousel center-block">
                         <div class="flexslider">
                             <ul class="slides">
@@ -93,10 +98,10 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <div class="product-description">
                         <div class="product-info">
-                            <div class="title big orange-text">
+                            <div class="title big orange-text hidden-xs hidden-sm">
                                 <span>FULL WINTER KIT</span>
                             </div>
                             <div class="product-kit-text">
@@ -131,9 +136,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="border"></div>
                                     <div class="quantity flex-container aligh-center">
                                         <span>Choos Quantity</span>
-                                        <input type="number" name="quantity" form = "product-option" class="custom-number" value="3">
+                                        <input type="number" name="quantity" form = "product-option" class="custom-number" min = "1" value="1">
                                     </div>
                                 </form>
                             </div>
@@ -154,8 +160,6 @@
             </div>
         </div>
     </div>
-
-
     <section class="default-section">
         <div class="container">
             <div class="title text-center">
@@ -164,8 +168,8 @@
             <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry </span>
             <div class="new-items">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="items">
                             <div class="item-img">
                                 <a href="category.html"><img src="img/item-img-3.png" alt=""></a>
                             </div>
@@ -195,8 +199,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="items">
                             <div class="item-img">
                                 <a href="category.html"><img src="img/item-img-2.png" alt=""></a>
                             </div>
@@ -226,8 +230,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="items">
                             <div class="item-img">
                                 <a href=""><img src="img/item-img-1.png" alt=""></a>
                             </div>
@@ -257,8 +261,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="items">
                             <div class="item-img">
                                 <a href=""><img src="img/item-img-3.png" alt=""></a>
                             </div>
@@ -301,7 +305,7 @@
                             <span class="subscribe-title">NEWS LETTER</span>
                             <span class="subscribe-text">join us now to get all news and special offers</span>
                         </div>
-                        <form class="flex-container aligh-center">
+                        <form class="flex-container aligh-center flex-wrap">
                             <div class="subscribe-input-group">
                                 <label for="subscribeEmail" class="custom-icon icon-mail-ic"></label>
                                 <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="type your email here">
