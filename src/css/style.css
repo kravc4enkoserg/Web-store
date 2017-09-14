@@ -433,9 +433,13 @@ span.basket-up {
         margin-bottom: 30px;
     }
 }
+
 @media(max-width: 599px){
     .subscribe-form{
         padding: 37px 15px;
+    }
+    .subscribe-input{
+        margin-right: 10px;
     }
     .subscribe-title{
         display: block;
@@ -444,7 +448,6 @@ span.basket-up {
     }
     .subscribe-input-group{
         margin-right: 0;
-        margin-bottom: 30px;
     }
     .subscribe-form form{
         justify-content: center;
@@ -454,9 +457,16 @@ span.basket-up {
     .subscribe-text {
         font-size: 12px; 
     }
+    .subscribe-input-group{
+        margin-bottom: 30px;
+    }
     .subscribe-input{
         font-size: 12px;
         min-width: 214px;
+        margin: 0;
+    }
+    .subscribe-form .btn.btn-default{
+        width: 100%;
     }
 }
 /* SUBSCRIBE-FORM STYLE END */
@@ -469,15 +479,12 @@ footer {
     color: #28313b;
     background-color: #fff;
 }
-footer .copyright{
-    margin-right: auto;
-}
 footer .copyright span{
     display: block;
     margin-top: 22px;
 }
-.footer-nav {
-    width: 200px;
+.footer-nav + .footer-nav{
+   margin-left: 54px;
 }
 .footer-nav a{
     display: inline-block;
@@ -513,28 +520,17 @@ footer .payment ul li +li{
 footer .payment ul li a{
     display: inline-block;
 }
-@media(max-width: 1199px){
-    .footer-nav {
-        width: 170px;
-    }
-}
-@media(max-width: 991px){
 
-    footer .footer-content{
-        flex-wrap: wrap;
+@media(max-width: 991px){
+    .footer-content{
         justify-content: center;
     }
     footer .copyright{
-        width: 100%;
-        margin: 0;
         text-align: center;
         margin-bottom: 22px;
     }
     .footer-nav-wrap{
         width: 100%
-    }
-    .footer-nav{
-        width: auto;
     }
     footer .payment{
         text-align: center;
@@ -547,8 +543,11 @@ footer .payment ul li a{
     }
     .footer-nav-wrap{
         flex-wrap: wrap;
-        text-align: center
+        text-align: center;
     } 
+    .footer-nav + .footer-nav {
+        margin-left: 0;
+    }
 }
 /* FOOTER STYLE END */
 /*DEFAULT COMPONENT END*/
@@ -893,7 +892,6 @@ footer .payment ul li a{
         width: 100%;
         text-align: center;
     }
-
 }
 /* ITEM-MINI STYLE END */
 /*---------------------------------------------------- CATEGORY PAGE STYLE START-------------------------------------------------------  */
@@ -1093,7 +1091,7 @@ html .ui-button.ui-state-disabled:active {
     margin-left: 22px;
 }
 .order-form {
-    padding: 40px 0;
+    padding: 35px 0;
     border-top: 1px solid #edeff1;
     border-bottom: 1px solid #edeff1;
 }
@@ -1134,6 +1132,9 @@ html .ui-button.ui-state-disabled:active {
     }
     .product-price{
         margin: 0;
+    }
+    .product-share {
+        padding-right: 0px;
     }
 }
  @media(max-width: 599px){
