@@ -37,24 +37,7 @@ button{
 label{
     margin-bottom: 0;
 }
-.btn {
-    padding: 18px 30px;
-    font-size: 14px;
-    line-height: 1;
-    border: none;
-    border-radius: 0;
-}
-.btn.btn-default{
-    color: #fff;
-    background-color: #ff5912;
-}
-.btn.btn-radius {
-    border-radius: 30px;
-}
-.btn.btn-big {
-    font-size:18px;
-    padding: 17px 24px;
-}
+
 /* RESET END */
 
 /*DEFAULT CLASSES START*/
@@ -101,12 +84,28 @@ label{
 .orange-bg{
     background-color: #ff5912;
 }
-.rating .empty{
-    color: #e9ecf3;
-}
+
 
 /*DEFAULT CLASSES END*/
 /*DEFAULT COMPONENT START*/
+.btn {
+    padding: 18px 30px;
+    font-size: 14px;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+}
+.btn.btn-default{
+    color: #fff;
+    background-color: #ff5912;
+}
+.btn.btn-radius {
+    border-radius: 30px;
+}
+.btn.btn-big {
+    font-size:18px;
+    padding: 17px 24px;
+}
 .custom-icon{
     display: inline-block;
 }
@@ -150,6 +149,9 @@ label{
 }
 .default-section{
     padding: 60px 0;
+}
+.rating .empty{
+    color: #e9ecf3;
 }
 .checkbox-group input[type="checkbox"]{
     display: none;
